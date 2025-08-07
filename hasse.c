@@ -80,10 +80,10 @@ int main() {
 
     // Final result
     if (reflexive && antisymmetric && transitive) {
-        printf("\n✅ The relation is a POSET (Partially Ordered Set).\n");
+        printf("\n The relation is a POSET (Partially Ordered Set).\n");
         printRelationMatrix(relation, n); // Show hash diagram
     } else {
-        printf("\n❌ The relation is NOT a POSET.\n");
+        printf("\n The relation is NOT a POSET.\n");
 
         // Print reasons why it is not a poset
         if (!reflexive)
@@ -96,3 +96,4 @@ int main() {
 
     return 0;
 }
+
