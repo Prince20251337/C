@@ -40,9 +40,9 @@ int isTransitive(int rel[MAX][MAX], int n) {
     return 1;
 }
 
-// Function to print the relation matrix (hash diagram)
+// Function to print the relation matrix (hasse diagram)
 void printRelationMatrix(int rel[MAX][MAX], int n) {
-    printf("\nHash Diagram (Relation Matrix):\n   ");
+    printf("\nHasse Diagram (Relation Matrix):\n   ");
     for (int i = 0; i < n; i++)
         printf("%d ", i); // Print column headers
     printf("\n");
@@ -81,7 +81,7 @@ int main() {
     // Final result
     if (reflexive && antisymmetric && transitive) {
         printf("\n The relation is a POSET (Partially Ordered Set).\n");
-        printRelationMatrix(relation, n); // Show hash diagram
+        printRelationMatrix(relation, n); // Show hasse diagram
     } else {
         printf("\n The relation is NOT a POSET.\n");
 
@@ -96,4 +96,5 @@ int main() {
 
     return 0;
 }
+
 
